@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shoppingmall &lt; yuyu.com</title>
+  <link rel="stylesheet" href="./css/modules/init.css">
+  <link rel="stylesheet" href="./css/modules/grid.css">
+  <style>
+    .box-wrapper {
+      background: #ff0;
+    }
+    .box {
+      height: 63px;
+      /*background: #333;*/
+      /*color: #fff;*/
+    }
+    .gap {
+      margin-bottom: 42px;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="row gap banner-top">
+      <h1 class="box col is-3 logo">
+        <a href="#">
+          <img class="logo-img" src="images/header/logo.png" alt="yuyu.com logo">
+        </a>
+      </h1>
+      <form class="box col is-4 is-offset-1 search">
+        <fieldset>
+          <legend class="a11y-hidden">검색폼</legend>
+          <label class="search-title" for="search"><img src="images/icons/icons.svg" alt="검색"></label>
+          <input type="search" id="search" name="search-bar" placeholder="검색어를 입력하세요.">
+        </fieldset>
+      </form>
+      <ul class="box col is-2 is-offset-2 sign">
+        <li class="sign-in"><a href="#">로그인</a></li>
+        <li class="sign-up"><a href="#">회원가입</a></li>
+      </ul>
+    </div>
+    <nav class="row menu-box">
+      <ul class="box col is-12 menu">
+        <li class="menu-list"><a href="#">main</a></li>
+        <li class="menu-list"><a href="#">brand</a></li>
+        <li class="menu-list"><a href="#">special</a></li>
+        <li class="menu-list"><a href="#">outer</a></li>
+        <li class="menu-list"><a href="#">tops</a></li>
+        <li class="menu-list"><a href="#">bottom</a></li>
+        <li class="menu-list"><a href="#">dress</a></li>
+        <li class="menu-list"><a href="#">shoes</a></li>
+        <li class="menu-list"><a href="#">bag</a></li>
+        <li class="menu-list"><a href="#">acc</a></li>
+        <li class="menu-list"><a href="#">summer</a></li>
+        <li class="menu-list"><a href="#">etc</a></li>
+      </ul>
+    </nav>
+  </header>
+  <aside class="row filter">
+    <div class=" filter-box">
+      <a href="#">
+        <div class="filter-icon">
+          <img src="images/icons/icons.svg" alt="filter-icon">
+        </div>
+        필터를 설정하세요.
+      </a>
+    </div>
+    <form class="filter-check age">
+      <fieldset>
+        <legend tabindex="0">연령대</legend>
+        <label for="ten" tabindex="0">10대</label>
+        <input type="checkbox" name="ten" id="ten">
+        <label for="two" tabindex="0">20대</label>
+        <input type="checkbox" name="two" id="two">
+        <label for="three" tabindex="0">30대</label>
+        <input type="checkbox" name="three" id="three">
+      </fieldset>
+    </form>
+    <form  class="filter-check style">
+      <fieldset>
+        <legend tabindex="0">스타일</legend>
+        <label for="girl" tabindex="0">소녀룩</label>
+        <input type="checkbox" name="girl" id="girl">
+        <label for="morden" tabindex="0">모던시크</label>
+        <input type="checkbox" name="morden" id="morden">
+        <label for="simple" tabindex="0">심플베이지</label>
+        <input type="checkbox" name="simple" id="simple">
+        <label for="romantic" tabindex="0">로맨틱</label>
+        <input type="checkbox" name="romantic" id="romantic">
+        <label for="office" tabindex="0">오피스룩</label>
+        <input type="checkbox" name="office" id="office">
+        <label for="campus" tabindex="0">캠퍼스룩</label>
+        <input type="checkbox" name="campus" id="campus">
+        <label for="bintige" tabindex="0">빈티지</label>
+        <input type="checkbox" name="bintige" id="bintige">
+        <label for="training" tabindex="0">트레이닝</label>
+        <input type="checkbox" name="training" id="training">
+      </fieldset>
+    </form>
+    <form class="complite">
+      <fieldset>
+        <legend class="a11y-hidden">결정</legend>
+        <label for="reset" class="a11y-hidden reset">초기화</label>
+        <input type="button" id="reset" name="reset" value="초기화">
+        <label for="select" class="a11y-hidden">필터 선택 완료</label>
+        <input type="button" id="select" name="select" value="필터 선택 완료">
+      </fieldset>
+    </form>
+  </aside>
+  <main class="container">
+    <section class="row banner">
+      <h2 class="a11y-hidden">진행중인 행사안내</h2>
+      <div class="box col is-12 banner-img">
+        <img src="images/banner/banner-01.jpg" alt="bannerimage">
+      </div>
+      <div class="box col is-12 img-nav">
+        <form class="round-box">
+          <fieldset class="slide-btn-box">
+            <legend class="a11y-hidden">이미지슬라이드</legend>
+            <label for="round1" class="a11y-hidden">이미지1</label>
+            <input type="button" class="round" id="round1" value="event-image1">
+            <label for="round2" class="a11y-hidden">이미지2</label>
+            <input type="button" class="round" id="round2" value="event-image2">
+            <label for="round3" class="a11y-hidden">이미지3</label>
+            <input type="button" class="round" id="round3" value="event-image3">
+            <label for="round4" class="a11y-hidden">이미지4</label>
+            <input type="button" class="round" id="round4" value="event-image4">
+            <label for="round5" class="a11y-hidden">이미지5</label>
+            <input type="button" class="round" id="round5" value="event-image5">
+            <label for="round6" class="a11y-hidden">이미지6</label>
+            <input type="button" class="round" id="round6" value="event-image6">
+            <label for="round7" class="a11y-hidden">이미지7</label>
+            <input type="button" class="round" id="round7" value="event-image7">
+            <label for="round8" class="a11y-hidden">이미지8</label>
+            <input type="button" class="round" id="round8" value="event-image8">
+            <label for="round9" class="a11y-hidden">이미지9</label>
+            <input type="button" class="round" id="round9" value="event-image9">
+            <label for="round10" class="a11y-hidden">이미지10</label>
+            <input type="button" class="round" id="round10" value="event-image10">
+            <label for="round11" class="a11y-hidden">이미지11</label>
+            <input type="button" class="round" id="round11" value="event-image11">
+            <label for="round12" class="a11y-hidden">이미지12</label>
+            <input type="button" class="round" id="round12" value="event-image12">
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="row bestseller">
+      <h2 class="title-box col is-12">베스트셀러</h2>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-01.jpg" alt="베스트셀러 상품-1">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Puppy-코튼니트</p>
+          <p class="item-price">39,000원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-02.jpg" alt="베스트셀러 상품-2">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">myblin</h3>
+          <p class="item-kinds">버튼 체크 원피스</p>
+          <p class="item-price">26,600원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-03.jpg" alt="베스트셀러 상품-3">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">BULLAN GIRL</h3>
+          <p class="item-kinds">아미라벨맨투맨</p>
+          <p class="item-price">12,500원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/best-seller/bs-seller-04.jpg" alt="베스트셀러 상품-4">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">MINIBBANG</h3>
+          <p class="item-kinds">Night-스키니팬츠</p>
+          <p class="item-price">29,900원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+    </section>
+    <section class="row brand">
+      <h2 class="title-box col is-12">브랜드</h2>
+      <div class="brand-box col is-3 brand-list-1 brand-list">
+        <div class="brand-title-box">
+          <span class="brand-title">mixxmix</span>
+        </div>
+        <div class="caption">
+          <span class="brand-list">01. mixxmix</span>
+          <button type="button" class="brand-like-btn"></button>
+        </div>
+      </div>
+      <div class="brand-box col is-3 brand-list-2 brand-list">
+        <div class="brand-title-box">
+          <span class="brand-title">REINE</span>
+        </div>
+        <div class="caption">
+          <span class="brand-list">02. REINE</span>
+          <button type="button" class="brand-like-btn"></button>
+        </div>
+      </div>
+      <div class="brand-box col is-3 brand-list-3 brand-list">
+        <div class="brand-title-box">
+          <span class="brand-title">BANHALA</span>
+        </div>
+        <div class="caption">
+          <span class="brand-list">03. BANHALA</span>
+          <button type="button" class="brand-like-btn"></button>
+        </div>
+      </div>
+      <div class="brand-box col is-3 brand-list-4 brand-list">
+        <div class="brand-title-box">
+          <span class="brand-title">CHERRYKOKO</span>
+        </div>
+        <div class="caption">
+          <span class="brand-list">04. CHERRYKOKO</span>
+          <button type="button" class="brand-like-btn"></button>
+        </div>
+      </div>
+      <button type="button" class="brand-prev brand-btn"></button>
+      <button type="button" class="brand-next brand-btn"></button>
+    </section>
+    <section class="row new-items">
+      <h2 class="title-box col is-12">신상품</h2>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/new-items/new-product-01.jpg" alt="신상품1">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Monobable</h3>
+          <p class="item-kinds">엘렌 니트원피스</p>
+          <p class="item-price">55,500원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/new-items/new-product-02.jpg" alt="신상품2">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Form Beginning</h3>
+          <p class="item-kinds">Ohkoos Vintage Knit</p>
+          <p class="item-price">26,600원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/new-items/new-product-03.jpg" alt="신상품3">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">Zemma World</h3>
+          <p class="item-kinds">Tied-골지니트</p>
+          <p class="item-price">22,000원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+      <div class="best-box col is-3 best-list">
+        <div class="item">
+          <a href="#">
+            <img src="images/new-items/new-product-04.jpg" alt="신상품4">
+          </a>
+        </div>
+        <div class="d9n">
+          <h3 class="item-name">daily monday</h3>
+          <p class="item-kinds">Buckle Wrap mini skirt</p>
+          <p class="item-price">27,000원</p>
+          <button type="button" class="like-btn"></button>
+        </div>
+      </div>
+    </section>
+    <section class="row sister-tip">
+      <h2 class="title-box col is-12">언니의 팁</h2>
+      <div class="box col is-4 tip-1 tip">
+        <a href="#">
+          <img src="images/tip/product-1.jpg" alt="언니가 알려주는 패션팁1">
+        </a>
+      </div>
+      <div class="box col is-4 tip-2 tip">
+        <a href="#">
+          <img src="images/tip/product-2.jpg" alt="언니가 알려주는 패션팁2">
+        </a>
+      </div>
+      <div class="box col is-4 tip-3 tip">
+        <a href="#">
+          <img src="images/tip/product-3.jpg" alt="언니가 알려주는 패션팁3">
+        </a>
+      </div>
+        <form class="tip-box">
+          <fieldset class="slide-btn-box">
+            <legend class="a11y-hidden">이미지슬라이드</legend>
+            <label for="tip1" class="a11y-hidden">이미지1</label>
+            <input type="button" class="round" id="tip1" value="tip-image1">
+            <label for="tip2" class="a11y-hidden">이미지2</label>
+            <input type="button" class="round" id="tip2" value="tip-image2">
+            <label for="tip3" class="a11y-hidden">이미지3</label>
+            <input type="button" class="round" id="tip3" value="tip-image3">
+            <label for="tip4" class="a11y-hidden">이미지4</label>
+            <input type="button" class="round" id="tip4" value="tip-image4">
+            <label for="tip5" class="a11y-hidden">이미지5</label>
+            <input type="button" class="round" id="tip5" value="tip-image5">
+            <label for="tip6" class="a11y-hidden">이미지6</label>
+            <input type="button" class="round" id="tip6" value="tip-image6">
+            <label for="tip7" class="a11y-hidden">이미지7</label>
+            <input type="button" class="round" id="tip7" value="tip-image7">
+            <label for="tip8" class="a11y-hidden">이미지8</label>
+            <input type="button" class="round" id="tip8" value="tip-image8">
+            <label for="tip9" class="a11y-hidden">이미지9</label>
+            <input type="button" class="round" id="tip9" value="tip-image9">
+            <label for="tip10" class="a11y-hidden">이미지10</label>
+            <input type="button" class="round" id="tip10" value="tip-image10">
+            <label for="tip11" class="a11y-hidden">이미지11</label>
+            <input type="button" class="round" id="tip11" value="tip-image11">
+            <label for="tip12" class="a11y-hidden">이미지12</label>
+            <input type="button" class="round" id="tip12" value="tip-image12">
+          </fieldset>
+        </form>
+    </section>
+    <section class="row best-review">
+      <h2 class="title-box col is-12">베스트리뷰</h2>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-01.jpg" alt="가디건에 대한 상품 리뷰이미지">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">따뜻해줘 가디건</h3>
+          <p class="review-text">배송은 쇼핑몰에서 입고가늦어져서 늦어졌습니다.</p>
+          <p class="review-price">31,900원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="gardigan-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="gardigan-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="gardigan-star1" class="a11y-hidden">
+            <label for="gardigan-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="gardigan-star2" class="a11y-hidden">
+            <label for="gardigan-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="gardigan-star3" class="a11y-hidden">
+            <label for="gardigan-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="gardigan-star4" class="a11y-hidden">
+            <label for="gardigan-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="gardigan-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-02.jpg" alt="버클트임박시후드 상품 후기">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">버클트임박시후드</h3>
+          <p class="review-text">후기를 너무 늦게 썼네요.ㅠ 딱 제가 입어보려고</p>
+          <p class="review-price">30,600원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="bucle-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="bucle-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="bucle-star1" class="a11y-hidden">
+            <label for="bucle-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="bucle-star2" class="a11y-hidden">
+            <label for="bucle-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="bucle-star3" class="a11y-hidden">
+            <label for="bucle-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="bucle-star4" class="a11y-hidden">
+            <label for="bucle-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="bucle-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-03.jpg" alt="chic-자켓에대한 상품 후기">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">Chic-자켓</h3>
+          <p class="review-text">어깨가 좀 있는 편이어서 오버핏으로 주문했어요.</p>
+          <p class="review-price">49,000원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="chic-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="chic-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="chic-star1" class="a11y-hidden">
+            <label for="chic-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="chic-star2" class="a11y-hidden">
+            <label for="chic-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="chic-star3" class="a11y-hidden">
+            <label for="chic-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="chic-star4" class="a11y-hidden">
+            <label for="chic-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="chic-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-04.jpg" alt="마실로 루즈핏 니트 상품후기">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">마실로 루즈핏 니트</h3>
+          <p class="review-text">베이지색상 가디건 필요했었는데 마침 나온 상품이</p>
+          <p class="review-price">19,000원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="masilo-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="masilo-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="masilo-star1" class="a11y-hidden">
+            <label for="masilo-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="masilo-star2" class="a11y-hidden">
+            <label for="masilo-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="masilo-star3" class="a11y-hidden">
+            <label for="masilo-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="masilo-star4" class="a11y-hidden">
+            <label for="masilo-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="masilo-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-05.jpg" alt="멜라니 트렌치 코드 상품 후기">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">멜라니 트랜치 코트</h3>
+          <p class="review-text">Lorem ipsum dolor sit amet,</p>
+          <p class="review-price">19,000원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="melani-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="melani-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="melani-star1" class="a11y-hidden">
+            <label for="melani-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="melani-star2" class="a11y-hidden">
+            <label for="melani-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="melani-star3" class="a11y-hidden">
+            <label for="melani-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="melani-star4" class="a11y-hidden">
+            <label for="melani-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="melani-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+      <div class="review-box col is-2">
+        <div class="review-img">
+          <a href="#">
+            <img src="images/best-review/bs-product-06.jpg" alt="Luc-브이넥니트 상품 후기">
+          </a>
+        </div>
+        <div class="review-content">
+          <h3 class="review-title">Luci-브이넥니트</h3>
+          <p class="review-text">노랑노랑하니 봄분위기나고 좋아요.</p>
+          <p class="review-price">24,000원</p>
+          <button type="button" class="review-like-btn"></button>
+        </div>
+        <form class="luci-grade grade">
+          <fieldset class="grade-box">
+            <legend class="a11y-hidden">별점매기기</legend>
+            <label for="luci-star1" class="star star1">첫번째 별</label>
+            <input type="checkbox" id="luci-star1" class="a11y-hidden">
+            <label for="luci-star2" class="star star2">두번째 별</label>
+            <input type="checkbox" id="luci-star2" class="a11y-hidden">
+            <label for="luci-star3" class="star star3">세번째 별</label>
+            <input type="checkbox" id="luci-star3" class="a11y-hidden">
+            <label for="luci-star4" class="star star4">네번째 별</label>
+            <input type="checkbox" id="luci-star4" class="a11y-hidden">
+            <label for="luci-star5" class="star star5">다섯번째 별</label>
+            <input type="checkbox" id="luci-star5" class="a11y-hidden">
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <aside class="row site-info">
+    <ul class="site-list">
+      <li class="site-item"><a href="#">Youyo 소개</a></li>
+      <li class="site-item"><a href="#">통합배송</a></li>
+      <li class="site-item"><a href="#">고객센터</a></li>
+      <li class="site-item"><a href="#">이용약관,개인정보</a></li>
+    </ul>
+  </aside>
+  <footer class="container footer">
+    <address class="row address">
+      <dl class="address-list">
+        <dt class="address-dt">Company.</dt>
+        <dd class="address-dd">Youyo</dd>
+        <dt class="address-dt">대표이사.</dt>
+        <dd class="address-dd">이정희</dd>
+        <dt class="address-dt">개인정보관리책임자.</dt>
+        <dd class="address-dd">이정희</dd>
+        <dt class="address-dt">사업자번호.</dt>
+        <dd class="address-dd">123-45-67890</dd>
+        <dt class="address-dt">통신판매업신고.</dt>
+        <dd class="address-dd">2016-성남분당-1234</dd>
+        <dt class="address-dt">주소.</dt>
+        <dd class="address-dd">경기 성남시 분당구 판교역로 221 201호</dd>
+        <dt class="address-dt">대표번호.</dt>
+        <dd class="address-dd">1234-5678</dd>
+      </dl>
+      <p>Copyright&copy;2016 YOUYU Co,.Ltd.All rights reserved.</p>
+    </address>
+    <aside class="as-center is-2">
+      <h3 class="as-title">고객센터</h3>
+      <p class="as-number">1234-5678</p>
+      <p class="as-time">월~금 11AM~6PM</p>
+      <p class="as-time">LUNCH 12:30~1:30PM</p>
+    </aside>
+    <div class="sns">
+      <ul class="sns-list">
+        <li class="sns-icon"><a class="chet" href="#"></a></li>
+        <li class="sns-icon"><a class="orange" href="#"></a></li>
+        <li class="sns-icon"><a class="facebook" href="#"></a></li>
+        <li class="sns-icon"><a class="wifi" href="#"></a></li>
+        <li class="sns-icon"><a class="instagram" href="#"></a></li>
+      </ul>
+      <img src="images/footer/partner.png" alt="유유닷컴과 코디북의 콜라보레이션 로고">
+    </div>
+  </footer>
+<script src="./js/toggleGrid.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+.banner{
+    margin-top: 42px;
+}
+.container .banner-img{
+    font-size: 0;
+    height: auto;
+    margin-bottom: 21px;
+}
+.slide-btn-box{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.round{
+    margin-top: 5px;
+    cursor: pointer;
+    float: left;
+    padding: 5px;
+    height: 0;
+    background: #c5c5c5;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+}
+.banner .img-nav{
+    height: 21px;
+}
+.round-box{
+    width: 230px;
+    margin: 0 auto;
+    input{
+        font-size: 0;
+    }
+}
+.round:last-child{
+    margin-right: 0;
+    background: #bd1d31;
+}
+.round:hover, .round:focus{
+    background: #bd1d31;
+}
